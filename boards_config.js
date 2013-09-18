@@ -122,3 +122,10 @@ gabu.postUrl = 'http://gabuzomeu.fr/tribune/post';
 gabu.color = '#aaffbb';
 gabu.slip = SLIP_TAGS_RAW;
 GlobalBoards['gabuzomeu'] = gabu;
+
+var devnewton = new Board('devnewton', false);
+devnewton.getUrl = 'http://devnewton.bci.im/fr/chat/xml';
+devnewton.postUrl = 'http://devnewton.bci.im/fr/chat/post';
+devnewton.color = '#F5D6CC';
+devnewton.slip = SLIP_TAGS_RAW;
+GlobalBoards['devnewton'] = devnewton;
