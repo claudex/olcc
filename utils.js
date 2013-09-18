@@ -4,7 +4,7 @@
  ************************************************************/
  
 // Constantes globales génériques
-var VERSION = '0.4.3';
+var VERSION = '0.4.3-claudex1';
 
 // Constantes de gestion des états
 var STATE_LOADED = 'loaded'; // Tribune chargée
@@ -44,7 +44,7 @@ var DEFAULT_PINNI_KEEP = true;
 var DEFAULT_AUTOREFRESH = true;
 var DEFAULT_TIMEOUT = 30000;
 var DEFAULT_ACTIVE_BOARDS = new Array();
-var DEFAULT_TOTOZ_SERVER = "http://totoz.eu/";
+var DEFAULT_TOTOZ_SERVER = "https://www.claudex.be/ttz";
 var DEFAULT_TOTOZ_MODE = TOTOZ_POPUP;
 var DEFAULT_DEFAULT_LOGIN = '';
 var DEFAULT_WINDOW_TITLE = "OnlineCoinCoin";
