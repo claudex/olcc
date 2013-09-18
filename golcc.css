@@ -530,3 +530,22 @@ td.cinfo {
 .stop:hover {
   background-image: url('img/control_stop_blue.png');
 }
+
+/* Added by claudex */
+
+input#palmi-message {
+  width: 70%;
+}
+
+select#palmi-list {
+ width: 25%;
+}
+
+form#post-form {
+ width: 70%;
+}
+
+form#post-form label, form#totoz-form label {
+  display: none;
+}
+

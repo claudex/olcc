@@ -458,3 +458,22 @@ td.cinfo {
 #totoz-list TD {
   text-align: center;
 }
+
+/* Added by claudex */
+
+input#palmi-message {
+  width: 80%;
+}
+
+select#palmi-list {
+ width: 15%;
+}
+
+form#post-form {
+ width: 80%;
+}
+
+form#post-form label, form#totoz-form label {
+  display: none;
+}
+
