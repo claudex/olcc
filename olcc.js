@@ -879,10 +879,12 @@ function initPage() {
         document.getElementById("tabs-filters").appendChild(filter);
         addEvent(filter, "click", function(e){var z=e.target || e.srcElement; toggleFilter(z.getAttribute('id').substr(7));}, false);
     }
-    // Ajout de la fenêtre d'aide au premier lancement
+    // Ajout de la fenêtre d'aide au premier lancement si on est pas sur mobile
     var help = document.getElementById('help');
     if (boards.length <= 0) {
-        help.style.display = 'block';
+    	if (!document.location.href.match(/iphone.html/)) {
+        	help.style.display = 'block';
+	}
         dispConfig();
     }
     else {
@@ -1003,9 +1005,9 @@ function onKeyDown(event) {
               case 'p':
                 insertInPalmi('_o/* <b>paf!</b> ');
                 break;
-              case 'c':
-                insertInPalmi('\\o/ chauvounet \\o/');
-                break;
+//              case 'c':
+//                insertInPalmi('\\o/ chauvounet \\o/');
+//                break;
               case 'n':
                 insertInPalmi('ounet');
                 break;
@@ -1026,7 +1028,7 @@ function onKeyDown(event) {
               case 's':
               case 't':
               case 'p':
-              case 'c':
+//              case 'c':
               case 'n':
               case 'g':
               case 'z':
