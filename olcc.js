@@ -879,10 +879,12 @@ function initPage() {
         document.getElementById("tabs-filters").appendChild(filter);
         addEvent(filter, "click", function(e){var z=e.target || e.srcElement; toggleFilter(z.getAttribute('id').substr(7));}, false);
     }
-    // Ajout de la fenêtre d'aide au premier lancement
+    // Ajout de la fenêtre d'aide au premier lancement si on est pas sur mobile
     var help = document.getElementById('help');
     if (boards.length <= 0) {
-        help.style.display = 'block';
+    	if (!document.location.href.match(/iphone.html/)) {
+        	help.style.display = 'block';
+	}
         dispConfig();
     }
     else {
