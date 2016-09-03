@@ -145,7 +145,7 @@ var settings = {
                 var opt = this.options[name];
                 var val = opt_val.substr(eqpos+1, opt_val.length);
                 if (name == 'default_ua') { // MAJ du numéro de version dans l'UA
-                    val = val.replace(/((?:ol|online)(?:cc|c²|coincoin))\/[0-9]+\.[0-9]+\.[0-9]+/i, '$1/'+VERSION);
+                    val = val.replace(/((?:ol|online)(?:cc|c²|coincoin))\/[0-9]+\.[0-9]+\.[0-9]+(-claudex1)/i, '$1/'+VERSION);
                 }
                 // alert("name="+name+" ; val="+val);
                 switch (opt.type) {
