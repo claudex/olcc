@@ -38,7 +38,8 @@ var BALLTRAP_AUTO = 'Auto launch';
 var BALLTRAP_KILL = 'Kill on click';
 
 // Valeurs de config par défaut
-var DEFAULT_DEFAULT_UA = "onlineCoinCoin/"+VERSION;
+//var DEFAULT_DEFAULT_UA = "onlineCoinCoin/"+VERSION;
+var DEFAULT_DEFAULT_UA = "onlineCoinCoin/0.4.3-claudex1";
 var DEFAULT_PINNI_SIZE = 1000;
 var DEFAULT_PINNI_KEEP = true;
 var DEFAULT_AUTOREFRESH = true;
