@@ -1003,9 +1003,9 @@ function onKeyDown(event) {
               case 'p':
                 insertInPalmi('_o/* <b>paf!</b> ');
                 break;
-              case 'c':
-                insertInPalmi('\\o/ chauvounet \\o/');
-                break;
+//              case 'c':
+//                insertInPalmi('\\o/ chauvounet \\o/');
+//                break;
               case 'n':
                 insertInPalmi('ounet');
                 break;
@@ -1026,7 +1026,7 @@ function onKeyDown(event) {
               case 's':
               case 't':
               case 'p':
-              case 'c':
+//              case 'c':
               case 'n':
               case 'g':
               case 'z':
