@@ -20,8 +20,11 @@ batavie.slip = SLIP_TAGS_RAW;
 GlobalBoards['batavie'] = batavie;
 
 var euro = new Board('euromussels', false);
-euro.getUrl = 'http://euromussels.eu/?q=tribune.xml';
-euro.postUrl = 'http://euromussels.eu/?q=tribune/post';
+//euro.getUrl = 'http://euromussels.eu/?q=tribune.xml';
+//euro.postUrl = 'http://euromussels.eu/?q=tribune/post';
+euro.getUrl = 'http://faab.euromussels.eu:80//data/backend.xml';
+euro.postUrl = 'http://faab.euromussels.eu:80//add.php';
+batavie.slip = SLIP_TAGS_RAW;
 euro.color = '#d0d0ff';
 euro.alias = "euro,euroxers";
 GlobalBoards['euromussels'] = euro;
@@ -35,9 +38,12 @@ see.alias = "schee,seeschloss";
 GlobalBoards['see'] = see;
 
 var moules = new Board('moules', false);
-moules.getUrl = 'http://moules.org/board/backend';
-moules.postUrl = 'http://moules.org/board/add';
+//moules.getUrl = 'http://moules.org/board/backend';
+moules.getUrl = 'http://moules.org/board/backend/xml';
+//moules.postUrl = 'http://moules.org/board/add';
+moules.postUrl = 'http://moules.org/board/add.php';
 moules.color = '#ffe3c9';
+moules.slip = SLIP_TAGS_RAW;
 GlobalBoards['moules'] = moules;
 
 var bouchot = new Board('bouchot', false);
@@ -55,9 +61,10 @@ finss.slip = SLIP_TAGS_RAW;
 GlobalBoards['finss'] = finss;
 
 var shoop = new Board('shoop', false);
-shoop.getUrl = 'http://dax.sveetch.net/tribune/remote.xml'; // ?last=%i inopérant pour le moment
-shoop.postUrl = 'http://dax.sveetch.net/tribune/post.xml';
+shoop.getUrl = 'http://www.sveetch.net/tribune/remote/xml/';
+shoop.postUrl = 'http://www.sveetch.net/tribune/post/xml/';
 shoop.postData = "content=%m";
+shoop.slip = SLIP_TAGS_RAW;
 shoop.alias = "sveetch,dax";
 shoop.color = '#EDEDDB';
 GlobalBoards['shoop'] = shoop;
